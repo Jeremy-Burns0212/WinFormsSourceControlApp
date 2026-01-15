@@ -20,9 +20,17 @@ public partial class Form1 : Form
 
     private void btnCalcAreaAndPerimeter_Click(object sender, EventArgs e)
     {
-        int length = Convert.ToInt32(txtLength.Text);
-        int width = Convert.ToInt32(txtWidth.Text);
+        if (!int.TryParse(txtLength.Text, out int length))
+        {
+			MessageBox.Show("Please enter a valid integer for length.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+			return;
+		}
 
+        if (!int.TryParse(txtWidth.Text, out int width))
+        {
+            MessageBox.Show("Please enter a valid integer for width.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            return;
+		}
         int area = length * width;
         int perimeter = 2 * (length + width);
 
