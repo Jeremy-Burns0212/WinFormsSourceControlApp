@@ -1,6 +1,6 @@
 ﻿namespace WinFormsSourceControl
 {
-    partial class Form1
+    partial class AreaAndPerimeterCalculator
     {
         /// <summary>
         /// Required designer variable.
@@ -28,32 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-			this.label1 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
+			this.lblLength = new System.Windows.Forms.Label();
+			this.lblWidth = new System.Windows.Forms.Label();
 			this.txtLength = new System.Windows.Forms.TextBox();
 			this.txtWidth = new System.Windows.Forms.TextBox();
 			this.btnCalcAreaAndPerimeter = new System.Windows.Forms.Button();
 			this.txtArea = new System.Windows.Forms.TextBox();
 			this.txtPerimeter = new System.Windows.Forms.TextBox();
+			this.chkDarkMode = new System.Windows.Forms.CheckBox();
 			this.SuspendLayout();
 			// 
-			// label1
+			// lblLength
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(45, 65);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(59, 20);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Length";
+			this.lblLength.AutoSize = true;
+			this.lblLength.Location = new System.Drawing.Point(45, 65);
+			this.lblLength.Name = "lblLength";
+			this.lblLength.Size = new System.Drawing.Size(59, 20);
+			this.lblLength.TabIndex = 0;
+			this.lblLength.Text = "Length";
 			// 
-			// label2
+			// lblWidth
 			// 
-			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(45, 108);
-			this.label2.Name = "label2";
-			this.label2.Size = new System.Drawing.Size(50, 20);
-			this.label2.TabIndex = 1;
-			this.label2.Text = "Width";
+			this.lblWidth.AutoSize = true;
+			this.lblWidth.Location = new System.Drawing.Point(45, 108);
+			this.lblWidth.Name = "lblWidth";
+			this.lblWidth.Size = new System.Drawing.Size(50, 20);
+			this.lblWidth.TabIndex = 1;
+			this.lblWidth.Text = "Width";
 			// 
 			// txtLength
 			// 
@@ -95,20 +96,32 @@
 			this.txtPerimeter.Size = new System.Drawing.Size(162, 26);
 			this.txtPerimeter.TabIndex = 6;
 			// 
-			// Form1
+			// chkDarkMode
+			// 
+			this.chkDarkMode.AutoSize = true;
+			this.chkDarkMode.Location = new System.Drawing.Point(304, 12);
+			this.chkDarkMode.Name = "chkDarkMode";
+			this.chkDarkMode.Size = new System.Drawing.Size(213, 24);
+			this.chkDarkMode.TabIndex = 7;
+			this.chkDarkMode.Text = "Dark Theme/Light Theme";
+			this.chkDarkMode.UseVisualStyleBackColor = true;
+			this.chkDarkMode.CheckedChanged += new System.EventHandler(this.chkDarkMode_CheckedChanged);
+			// 
+			// AreaAndPerimeterCalculator
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(529, 297);
+			this.Controls.Add(this.chkDarkMode);
 			this.Controls.Add(this.txtPerimeter);
 			this.Controls.Add(this.txtArea);
 			this.Controls.Add(this.btnCalcAreaAndPerimeter);
 			this.Controls.Add(this.txtWidth);
 			this.Controls.Add(this.txtLength);
-			this.Controls.Add(this.label2);
-			this.Controls.Add(this.label1);
-			this.Name = "Form1";
-			this.Text = "Form1";
+			this.Controls.Add(this.lblWidth);
+			this.Controls.Add(this.lblLength);
+			this.Name = "AreaAndPerimeterCalculator";
+			this.Text = "Area And Perimeter Calculator";
 			this.ResumeLayout(false);
 			this.PerformLayout();
 
@@ -116,13 +129,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lblLength;
+        private System.Windows.Forms.Label lblWidth;
         private System.Windows.Forms.TextBox txtLength;
         private System.Windows.Forms.TextBox txtWidth;
         private System.Windows.Forms.Button btnCalcAreaAndPerimeter;
         private System.Windows.Forms.TextBox txtArea;
         private System.Windows.Forms.TextBox txtPerimeter;
+        private System.Windows.Forms.CheckBox chkDarkMode;
     }
 }
 
