@@ -89,7 +89,7 @@
 			// 
 			// txtPerimeter
 			// 
-			this.txtPerimeter.Location = new System.Drawing.Point(313, 220);
+			this.txtPerimeter.Location = new System.Drawing.Point(313, 200);
 			this.txtPerimeter.Name = "txtPerimeter";
 			this.txtPerimeter.ReadOnly = true;
 			this.txtPerimeter.Size = new System.Drawing.Size(162, 26);
@@ -99,7 +99,7 @@
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(800, 450);
+			this.ClientSize = new System.Drawing.Size(529, 297);
 			this.Controls.Add(this.txtPerimeter);
 			this.Controls.Add(this.txtArea);
 			this.Controls.Add(this.btnCalcAreaAndPerimeter);
