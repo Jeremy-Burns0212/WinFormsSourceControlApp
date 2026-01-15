@@ -7,6 +7,7 @@
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
+
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
@@ -36,6 +37,8 @@
 			this.txtArea = new System.Windows.Forms.TextBox();
 			this.txtPerimeter = new System.Windows.Forms.TextBox();
 			this.chkDarkMode = new System.Windows.Forms.CheckBox();
+			this.cboLengthUnit = new System.Windows.Forms.ComboBox();
+			this.cboWidthUnit = new System.Windows.Forms.ComboBox();
 			this.SuspendLayout();
 			// 
 			// lblLength
@@ -82,7 +85,7 @@
 			// 
 			// txtArea
 			// 
-			this.txtArea.Location = new System.Drawing.Point(313, 137);
+			this.txtArea.Location = new System.Drawing.Point(313, 163);
 			this.txtArea.Name = "txtArea";
 			this.txtArea.ReadOnly = true;
 			this.txtArea.Size = new System.Drawing.Size(162, 26);
@@ -90,7 +93,7 @@
 			// 
 			// txtPerimeter
 			// 
-			this.txtPerimeter.Location = new System.Drawing.Point(313, 200);
+			this.txtPerimeter.Location = new System.Drawing.Point(313, 220);
 			this.txtPerimeter.Name = "txtPerimeter";
 			this.txtPerimeter.ReadOnly = true;
 			this.txtPerimeter.Size = new System.Drawing.Size(162, 26);
@@ -99,19 +102,39 @@
 			// chkDarkMode
 			// 
 			this.chkDarkMode.AutoSize = true;
-			this.chkDarkMode.Location = new System.Drawing.Point(304, 12);
+			this.chkDarkMode.Location = new System.Drawing.Point(443, 12);
 			this.chkDarkMode.Name = "chkDarkMode";
-			this.chkDarkMode.Size = new System.Drawing.Size(213, 24);
+			this.chkDarkMode.Size = new System.Drawing.Size(214, 24);
 			this.chkDarkMode.TabIndex = 7;
 			this.chkDarkMode.Text = "Dark Theme/Light Theme";
 			this.chkDarkMode.UseVisualStyleBackColor = true;
 			this.chkDarkMode.CheckedChanged += new System.EventHandler(this.chkDarkMode_CheckedChanged);
 			// 
+			// cboLengthUnit
+			// 
+			this.cboLengthUnit.FormattingEnabled = true;
+			this.cboLengthUnit.Location = new System.Drawing.Point(286, 62);
+			this.cboLengthUnit.Name = "cboLengthUnit";
+			this.cboLengthUnit.Size = new System.Drawing.Size(67, 28);
+			this.cboLengthUnit.TabIndex = 8;
+			this.cboLengthUnit.SelectedIndexChanged += new System.EventHandler(this.cboLengthUnit_SelectedIndexChanged);
+			// 
+			// cboWidthUnit
+			// 
+			this.cboWidthUnit.FormattingEnabled = true;
+			this.cboWidthUnit.Location = new System.Drawing.Point(286, 105);
+			this.cboWidthUnit.Name = "cboWidthUnit";
+			this.cboWidthUnit.Size = new System.Drawing.Size(67, 28);
+			this.cboWidthUnit.TabIndex = 9;
+			this.cboWidthUnit.SelectedIndexChanged += new System.EventHandler(this.cboWidthUnit_SelectedIndexChanged);
+			// 
 			// AreaAndPerimeterCalculator
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(529, 297);
+			this.ClientSize = new System.Drawing.Size(669, 297);
+			this.Controls.Add(this.cboWidthUnit);
+			this.Controls.Add(this.cboLengthUnit);
 			this.Controls.Add(this.chkDarkMode);
 			this.Controls.Add(this.txtPerimeter);
 			this.Controls.Add(this.txtArea);
@@ -137,6 +160,8 @@
         private System.Windows.Forms.TextBox txtArea;
         private System.Windows.Forms.TextBox txtPerimeter;
         private System.Windows.Forms.CheckBox chkDarkMode;
+        private System.Windows.Forms.ComboBox cboLengthUnit;
+        private System.Windows.Forms.ComboBox cboWidthUnit;
     }
 }
 
